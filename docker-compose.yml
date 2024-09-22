@@ -1,0 +1,104 @@
+version: '3.8'
+services:
+  redis:
+    build: ./redis
+    container_name: redis_cache
+    ports:
+      - "6379:6379"
+    networks:
+      - fog_network
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # Redis will use up to 2 GB of RAM
+
+  manager:
+    build: ./manager
+    container_name: manager
+    networks:
+      - fog_network
+    depends_on:
+      - redis
+    ports:
+      - "6000:6000"
+    deploy:
+      resources:
+        limits:
+          memory: 4g  # Manager will use up to 4 GB RAM
+          cpus: "2.0"  # Limit to 2 CPU cores
+
+  fog_node1:
+    build: ./fog_nodes
+    container_name: fog_node1
+    environment:
+      - FOG_NODE_NUMBER=1
+      - PORT=5000
+      - REDIS_HOST=redis
+    networks:
+      - fog_network
+    depends_on:
+      - redis
+    ports:
+      - "5000:5000"
+    deploy:
+      resources:
+        limits:
+          memory: 8g   # Fog node will use up to 8 GB RAM
+          cpus: "2.0"  # Limit to 2 CPU cores
+
+  fog_node2:
+    build: ./fog_nodes
+    container_name: fog_node2
+    environment:
+      - FOG_NODE_NUMBER=2
+      - PORT=5001
+      - REDIS_HOST=redis
+    networks:
+      - fog_network
+    depends_on:
+      - redis
+    ports:
+      - "5001:5001"
+    deploy:
+      resources:
+        limits:
+          memory: 8g
+          cpus: "2.0"
+
+  fog_node3:
+    build: ./fog_nodes
+    container_name: fog_node3
+    environment:
+      - FOG_NODE_NUMBER=3
+      - PORT=5002
+      - REDIS_HOST=redis
+    networks:
+      - fog_network
+    depends_on:
+      - redis
+    ports:
+      - "5002:5002"
+    deploy:
+      resources:
+        limits:
+          memory: 8g
+          cpus: "2.0"
+
+  iot_device:
+    build: ./iot_device
+    container_name: iot_device
+    networks:
+      - fog_network
+    stdin_open: true  # Keep container open for interaction
+    tty: true  # Allow interactive shell
+    depends_on:
+      - manager
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # Limit to 2 GB RAM
+          cpus: "2.0"  # Limit to 2 CPU cores
+
+networks:
+  fog_network:
+    driver: bridge
