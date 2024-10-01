@@ -6,18 +6,19 @@ import threading
 import csv
 from flask import Flask, jsonify, request
 import redis
+from datetime import datetime
 
 app = Flask(__name__)
 
 # Set fog node number and port from environment variables
-fog_node_number = os.getenv('FOG_NODE_NUMBER', 1)  # Default to node 1 if not set
-port = int(os.getenv('PORT', 5002))  # Default to port 5000 if not set
+fog_node_number = os.getenv('FOG_NODE_NUMBER', 3)  # Change for each node
+port = int(os.getenv('PORT', 5002))  # Change for each node
 
-# Get Redis host and port from environment variables (default to 'localhost' and port 6379)
-redis_host = os.getenv('REDIS_HOST', 'localhost')
+# Get Redis host and port from environment variables (default to 'redis_cache' and port 6379)
+redis_host = os.getenv('REDIS_HOST', 'redis_cache')
 redis_port = int(os.getenv('REDIS_PORT', 6379))
 
-# Establish Redis connection with retry logic
+# Establish Redis connection
 cache = None
 while cache is None:
     try:
@@ -60,14 +61,13 @@ def offload_task():
         task_metrics = {
             'task_id': task_id,
             'fog_node_number': fog_node_number,
-            'from_cache': True,  # Indicate that it was fetched from cache
+            'from_cache': True,
             'delay': 0,
             'energy_consumption': 0,
             'result': result,
-            'cache_hit': True  # Log cache hit
+            'cache_hit': True
         }
         log_task_metrics_csv(task_metrics)
-        print(f"Task {task['task_type']} fetched from cache. (Task ID: {task_id})")
         return jsonify(task_metrics)
 
     # Simulate processing the task and calculate all delays
@@ -85,43 +85,26 @@ def offload_task():
         'delay': total_delay,
         'energy_consumption': energy_consumption,
         'result': result,
-        'cache_hit': False  # Log cache miss
+        'cache_hit': False
     }
 
     log_task_metrics_csv(task_metrics)
-    print(f"Task {task['task_type']} processed in {total_delay:.2f} seconds, energy used: {energy_consumption:.2f} units")
     return jsonify(task_metrics)
 
 
 def process_task(task):
     """Simulate task processing and calculate delay and energy consumption."""
     current_tasks.append(task)
-    start_time = time.time()
+    
+    # Simulate delays
+    transmission_delay = task['task_size'] / 10
+    propagation_delay = 0.1
+    processing_time = task['task_size'] / 10
 
-    # Simulate queuing delay
-    queuing_delay = len(current_tasks) * 0.5  # Example: 0.5 seconds per task in queue
+    time.sleep(processing_time)  # Simulate processing
 
-    # Simulate transmission delay (based on task size and bandwidth)
-    transmission_delay = task['task_size'] / 10  # Simplified: 1 unit time per 10MB
-
-    # Simulate propagation delay
-    propagation_delay = 0.1  # Assume a small propagation delay (e.g., 0.1 seconds)
-
-    # Simulate processing delay
-    processing_time = task['task_size'] / 10  # Simplified processing time
-
-    # Capture CPU usage before and after processing
-    cpu_start = psutil.cpu_percent(interval=None)
-
-    # Simulate actual processing time
-    time.sleep(processing_time)
-
-    cpu_end = psutil.cpu_percent(interval=None)
-
-    # Calculate total delay and energy consumption
-    total_delay = queuing_delay + transmission_delay + propagation_delay + processing_time
-    avg_cpu_usage = (cpu_start + cpu_end) / 2
-    energy_consumption = total_delay * avg_cpu_usage * 0.5  # Energy in arbitrary units
+    total_delay = transmission_delay + propagation_delay + processing_time
+    energy_consumption = total_delay * psutil.cpu_percent() * 0.5
 
     current_tasks.pop()
 
@@ -130,36 +113,49 @@ def process_task(task):
 
 def send_status_to_manager():
     """Send the fog node's status to the central manager periodically."""
+    update_interval = 20 # Default interval for sending status updates
+    max_retries = 3  # Maximum number of retries in case of failure
+    retry_delay = 5  # Delay between retries in case of failure
+
     while True:
-        # Collect resource usage data (CPU, memory, etc.)
-        cpu_usage = psutil.cpu_percent(interval=1)
+        cpu_usage = psutil.cpu_percent(interval=2)
         memory_info = psutil.virtual_memory()
         task_queue_length = len(current_tasks)
 
-        # Send status to the manager
         status_data = {
             'fog_node_number': fog_node_number,
             'cpu_usage': cpu_usage,
             'memory_available': memory_info.available,
-            'total_memory': psutil.virtual_memory().total,
+            'total_memory': memory_info.total,
             'task_queue_length': task_queue_length,
-            'port': port
+            'port': port,
+            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         }
 
-        try:
-            response = requests.post('http://localhost:6000/status_update', json=status_data)
-            if response.status_code != 200:
-                print(f"Failed to update status: {response.status_code}")
-        except Exception as e:
-            print(f"Error sending status update: {e}")
+        success = False
+        for attempt in range(max_retries):
+            try:
+                # Send status to manager
+                response = requests.post(f'http://manager:6000/status_update', json=status_data)
+                if response.status_code == 200:
+                    success = True
+                    break  # Exit the retry loop on success
+            except Exception as e:
+                print(f"Error sending status update, attempt {attempt + 1}/{max_retries}: {e}")
+                time.sleep(retry_delay)  # Wait before retrying
 
-        time.sleep(10)  # Send status every 10 seconds
+        if not success:
+            print(f"Failed to send status update after {max_retries} attempts. Will try again after {update_interval} seconds.")
+
+        time.sleep(update_interval)  # Regular update interval
 
 
-# Start the status update thread when the fog node starts
+
+
 if __name__ == "__main__":
     status_thread = threading.Thread(target=send_status_to_manager)
     status_thread.daemon = True
     status_thread.start()
 
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=True)
+

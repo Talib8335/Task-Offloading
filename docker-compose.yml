@@ -4,13 +4,14 @@ services:
     build: ./redis
     container_name: redis_cache
     ports:
-      - "6379:6379"
+      - "6379:6379"  # Redis default port
     networks:
       - fog_network
     deploy:
       resources:
         limits:
-          memory: 2g  # Redis will use up to 2 GB of RAM
+          memory: 1g  # Redis 500MB memory
+          cpus: "1.0"   # Redis 1 CPU core
 
   manager:
     build: ./manager
@@ -21,11 +22,14 @@ services:
       - redis
     ports:
       - "6000:6000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
     deploy:
       resources:
         limits:
-          memory: 4g  # Manager will use up to 4 GB RAM
-          cpus: "2.0"  # Limit to 2 CPU cores
+          memory: 1g  # Manager 1GB memory
+          cpus: "1.0"  # Manager 1 CPU core
 
   fog_node1:
     build: ./fog_nodes
@@ -34,6 +38,7 @@ services:
       - FOG_NODE_NUMBER=1
       - PORT=5000
       - REDIS_HOST=redis
+      - REDIS_PORT=6379
     networks:
       - fog_network
     depends_on:
@@ -43,8 +48,8 @@ services:
     deploy:
       resources:
         limits:
-          memory: 8g   # Fog node will use up to 8 GB RAM
-          cpus: "2.0"  # Limit to 2 CPU cores
+          memory: 1g  # Fog Node 1GB memory
+          cpus: "1.0"  # Fog Node 1 CPU core
 
   fog_node2:
     build: ./fog_nodes
@@ -53,6 +58,7 @@ services:
       - FOG_NODE_NUMBER=2
       - PORT=5001
       - REDIS_HOST=redis
+      - REDIS_PORT=6379
     networks:
       - fog_network
     depends_on:
@@ -62,8 +68,8 @@ services:
     deploy:
       resources:
         limits:
-          memory: 8g
-          cpus: "2.0"
+          memory: 1g  # Fog Node 1GB memory
+          cpus: "1.0"  # Fog Node 1 CPU core
 
   fog_node3:
     build: ./fog_nodes
@@ -72,6 +78,7 @@ services:
       - FOG_NODE_NUMBER=3
       - PORT=5002
       - REDIS_HOST=redis
+      - REDIS_PORT=6379
     networks:
       - fog_network
     depends_on:
@@ -81,8 +88,8 @@ services:
     deploy:
       resources:
         limits:
-          memory: 8g
-          cpus: "2.0"
+          memory: 1g  # Fog Node 1GB memory
+          cpus: "1.0"  # Fog Node 1 CPU core
 
   iot_device:
     build: ./iot_device
@@ -96,9 +103,10 @@ services:
     deploy:
       resources:
         limits:
-          memory: 2g  # Limit to 2 GB RAM
-          cpus: "2.0"  # Limit to 2 CPU cores
+          memory: 1g  # IoT Device 1GB memory
+          cpus: "1.0"  # IoT Device 1 CPU core
 
 networks:
   fog_network:
     driver: bridge
+

@@ -9,3 +9,4 @@ EXPOSE 6379
 
 # Run Redis with the custom configuration file
 CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
+

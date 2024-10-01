@@ -1,0 +1,412 @@
+2024-09-29 13:59:39,449 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.50.26.254:6000
+2024-09-29 13:59:39,449 INFO [33mPress CTRL+C to quit[0m
+2024-09-29 13:59:39,450 INFO  * Restarting with stat
+2024-09-29 13:59:39,636 WARNING  * Debugger is active!
+2024-09-29 13:59:39,637 INFO  * Debugger PIN: 118-721-888
+2024-09-29 13:59:56,982 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 8.9, 'memory_available': 3849433088, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 13:59:56'}
+2024-09-29 13:59:56,984 INFO 127.0.0.1 - - [29/Sep/2024 13:59:56] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 13:59:57,219 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 8.2, 'memory_available': 3849433088, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 13:59:57'}
+2024-09-29 13:59:57,221 INFO 127.0.0.1 - - [29/Sep/2024 13:59:57] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:06,950 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 9.9, 'memory_available': 3794292736, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:00:06'}
+2024-09-29 14:00:06,952 INFO 127.0.0.1 - - [29/Sep/2024 14:00:06] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:07,178 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 10.7, 'memory_available': 3794284544, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:00:07'}
+2024-09-29 14:00:07,178 INFO 127.0.0.1 - - [29/Sep/2024 14:00:07] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:18,488 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 12.6, 'memory_available': 3772936192, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:00:18'}
+2024-09-29 14:00:18,489 INFO 127.0.0.1 - - [29/Sep/2024 14:00:18] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:18,748 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 12.4, 'memory_available': 3772682240, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:00:18'}
+2024-09-29 14:00:18,749 INFO 127.0.0.1 - - [29/Sep/2024 14:00:18] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:19,019 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 12.2, 'memory_available': 3771904000, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:00:19'}
+2024-09-29 14:00:19,020 INFO 127.0.0.1 - - [29/Sep/2024 14:00:19] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:19,252 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 11.1, 'memory_available': 3771445248, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:00:19'}
+2024-09-29 14:00:19,253 INFO 127.0.0.1 - - [29/Sep/2024 14:00:19] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:28,985 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 3.3, 'memory_available': 3768037376, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:00:28'}
+2024-09-29 14:00:28,986 INFO 127.0.0.1 - - [29/Sep/2024 14:00:28] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:29,205 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 4.1, 'memory_available': 3767549952, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:00:29'}
+2024-09-29 14:00:29,206 INFO 127.0.0.1 - - [29/Sep/2024 14:00:29] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:36,823 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 32, 'deadline': 28}
+2024-09-29 14:00:36,825 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:00:36,827 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:00:40,037 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 207
+2024-09-29 14:00:40,039 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 6.5, 'energy_consumption': 0.0, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed video_streaming on fog node 2', 'task_id': 'video_streaming_32'}
+2024-09-29 14:00:40,041 INFO 127.0.0.1 - - [29/Sep/2024 14:00:40] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:00:40,518 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 5.0, 'memory_available': 3751907328, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:00:40'}
+2024-09-29 14:00:40,519 INFO 127.0.0.1 - - [29/Sep/2024 14:00:40] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:40,777 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 4.5, 'memory_available': 3750649856, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:00:40'}
+2024-09-29 14:00:40,778 INFO 127.0.0.1 - - [29/Sep/2024 14:00:40] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:41,052 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 4.3, 'memory_available': 3749867520, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:00:41'}
+2024-09-29 14:00:41,054 INFO 127.0.0.1 - - [29/Sep/2024 14:00:41] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:41,285 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 5.0, 'memory_available': 3749609472, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:00:41'}
+2024-09-29 14:00:41,286 INFO 127.0.0.1 - - [29/Sep/2024 14:00:41] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:47,058 INFO Received task for offloading: {'task_type': 'image_processing', 'task_size': 82, 'deadline': 9}
+2024-09-29 14:00:47,059 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:00:47,063 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:00:51,019 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 3.0, 'memory_available': 3776495616, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:00:51'}
+2024-09-29 14:00:51,019 INFO 127.0.0.1 - - [29/Sep/2024 14:00:51] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:51,237 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 3.2, 'memory_available': 3776258048, 'total_memory': 8226656256, 'task_queue_length': 1, 'port': 5001, 'timestamp': '2024-09-29 14:00:51'}
+2024-09-29 14:00:51,238 INFO 127.0.0.1 - - [29/Sep/2024 14:00:51] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:00:55,280 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 213
+2024-09-29 14:00:55,282 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 16.5, 'energy_consumption': 28.875, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed image_processing on fog node 2', 'task_id': 'image_processing_82'}
+2024-09-29 14:00:55,284 INFO 127.0.0.1 - - [29/Sep/2024 14:00:55] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:00:58,298 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 61, 'deadline': 27}
+2024-09-29 14:00:58,299 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:00:58,304 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:01:02,549 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 12.6, 'memory_available': 3772129280, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:01:02'}
+2024-09-29 14:01:02,551 INFO 127.0.0.1 - - [29/Sep/2024 14:01:02] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:02,808 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 12.8, 'memory_available': 3772133376, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:01:02'}
+2024-09-29 14:01:02,809 INFO 127.0.0.1 - - [29/Sep/2024 14:01:02] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:03,087 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 12.8, 'memory_available': 3772133376, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:01:03'}
+2024-09-29 14:01:03,088 INFO 127.0.0.1 - - [29/Sep/2024 14:01:03] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:03,316 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 13.1, 'memory_available': 3772133376, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:01:03'}
+2024-09-29 14:01:03,317 INFO 127.0.0.1 - - [29/Sep/2024 14:01:03] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:04,416 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 236
+2024-09-29 14:01:04,417 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 12.299999999999999, 'energy_consumption': 37.51499999999999, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed video_streaming on fog node 2', 'task_id': 'video_streaming_61'}
+2024-09-29 14:01:04,418 INFO 127.0.0.1 - - [29/Sep/2024 14:01:04] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:01:09,437 INFO Received task for offloading: {'task_type': 'image_processing', 'task_size': 36, 'deadline': 5}
+2024-09-29 14:01:09,438 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:01:09,442 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:01:13,049 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 2.8, 'memory_available': 3770675200, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:01:13'}
+2024-09-29 14:01:13,050 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 225
+2024-09-29 14:01:13,050 INFO 127.0.0.1 - - [29/Sep/2024 14:01:13] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:13,051 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 7.300000000000001, 'energy_consumption': 16.79, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed image_processing on fog node 2', 'task_id': 'image_processing_36'}
+2024-09-29 14:01:13,051 INFO 127.0.0.1 - - [29/Sep/2024 14:01:13] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:01:13,272 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 3.4, 'memory_available': 3770675200, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:01:13'}
+2024-09-29 14:01:13,274 INFO 127.0.0.1 - - [29/Sep/2024 14:01:13] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:20,067 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 80, 'deadline': 13}
+2024-09-29 14:01:20,068 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:01:20,074 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:01:24,583 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 6.0, 'memory_available': 3765637120, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:01:24'}
+2024-09-29 14:01:24,584 INFO 127.0.0.1 - - [29/Sep/2024 14:01:24] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:24,840 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 5.4, 'memory_available': 3765637120, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:01:24'}
+2024-09-29 14:01:24,841 INFO 127.0.0.1 - - [29/Sep/2024 14:01:24] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:25,120 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 6.8, 'memory_available': 3765133312, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:01:25'}
+2024-09-29 14:01:25,122 INFO 127.0.0.1 - - [29/Sep/2024 14:01:25] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:25,347 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 6.2, 'memory_available': 3764887552, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:01:25'}
+2024-09-29 14:01:25,348 INFO 127.0.0.1 - - [29/Sep/2024 14:01:25] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:28,090 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 222
+2024-09-29 14:01:28,092 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 16.1, 'energy_consumption': 53.93500000000001, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed video_streaming on fog node 2', 'task_id': 'video_streaming_80'}
+2024-09-29 14:01:28,094 INFO 127.0.0.1 - - [29/Sep/2024 14:01:28] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:01:35,081 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 6.2, 'memory_available': 3762970624, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:01:35'}
+2024-09-29 14:01:35,082 INFO 127.0.0.1 - - [29/Sep/2024 14:01:35] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:35,303 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 6.3, 'memory_available': 3762982912, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:01:35'}
+2024-09-29 14:01:35,304 INFO 127.0.0.1 - - [29/Sep/2024 14:01:35] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:40,115 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 34, 'deadline': 18}
+2024-09-29 14:01:40,116 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:01:40,119 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:01:43,529 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 207
+2024-09-29 14:01:43,531 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 6.9, 'energy_consumption': 0.0, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed video_streaming on fog node 3', 'task_id': 'video_streaming_34'}
+2024-09-29 14:01:43,532 INFO 127.0.0.1 - - [29/Sep/2024 14:01:43] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:01:46,615 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 3.0, 'memory_available': 3759779840, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:01:46'}
+2024-09-29 14:01:46,617 INFO 127.0.0.1 - - [29/Sep/2024 14:01:46] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:46,872 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 3.6, 'memory_available': 3759779840, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:01:46'}
+2024-09-29 14:01:46,873 INFO 127.0.0.1 - - [29/Sep/2024 14:01:46] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:47,156 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 4.1, 'memory_available': 3759558656, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:01:47'}
+2024-09-29 14:01:47,157 INFO 127.0.0.1 - - [29/Sep/2024 14:01:47] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:47,378 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 4.6, 'memory_available': 3759845376, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:01:47'}
+2024-09-29 14:01:47,379 INFO 127.0.0.1 - - [29/Sep/2024 14:01:47] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:48,549 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 57, 'deadline': 22}
+2024-09-29 14:01:48,550 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:01:48,554 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:01:54,265 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 205
+2024-09-29 14:01:54,268 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 11.5, 'energy_consumption': 25.3, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed data_analysis on fog node 3', 'task_id': 'data_analysis_57'}
+2024-09-29 14:01:54,269 INFO 127.0.0.1 - - [29/Sep/2024 14:01:54] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:01:57,111 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 4.9, 'memory_available': 3759939584, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:01:57'}
+2024-09-29 14:01:57,112 INFO 127.0.0.1 - - [29/Sep/2024 14:01:57] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:01:57,335 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 6.3, 'memory_available': 3759939584, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:01:57'}
+2024-09-29 14:01:57,337 INFO 127.0.0.1 - - [29/Sep/2024 14:01:57] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:00,284 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 93, 'deadline': 11}
+2024-09-29 14:02:00,285 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:02:00,289 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:02:08,648 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 4.5, 'memory_available': 3762331648, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:02:08'}
+2024-09-29 14:02:08,649 INFO 127.0.0.1 - - [29/Sep/2024 14:02:08] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:08,899 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 5.8, 'memory_available': 3762085888, 'total_memory': 8226656256, 'task_queue_length': 1, 'port': 5002, 'timestamp': '2024-09-29 14:02:08'}
+2024-09-29 14:02:08,900 INFO 127.0.0.1 - - [29/Sep/2024 14:02:08] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:09,191 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 5.7, 'memory_available': 3761840128, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:02:09'}
+2024-09-29 14:02:09,192 INFO 127.0.0.1 - - [29/Sep/2024 14:02:09] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:09,409 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 6.6, 'memory_available': 3761594368, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:02:09'}
+2024-09-29 14:02:09,410 INFO 127.0.0.1 - - [29/Sep/2024 14:02:09] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:09,606 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 232
+2024-09-29 14:02:09,608 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 18.700000000000003, 'energy_consumption': 50.49000000000001, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed data_analysis on fog node 3', 'task_id': 'data_analysis_93'}
+2024-09-29 14:02:09,610 INFO 127.0.0.1 - - [29/Sep/2024 14:02:09] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:02:12,625 INFO Received task for offloading: {'task_type': 'image_processing', 'task_size': 74, 'deadline': 7}
+2024-09-29 14:02:12,626 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:02:12,628 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:02:19,137 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 5.9, 'memory_available': 3760173056, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:02:19'}
+2024-09-29 14:02:19,138 INFO 127.0.0.1 - - [29/Sep/2024 14:02:19] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:19,353 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 6.7, 'memory_available': 3759665152, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:02:19'}
+2024-09-29 14:02:19,354 INFO 127.0.0.1 - - [29/Sep/2024 14:02:19] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:20,041 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 213
+2024-09-29 14:02:20,042 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 14.9, 'energy_consumption': 39.485, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed image_processing on fog node 3', 'task_id': 'image_processing_74'}
+2024-09-29 14:02:20,044 INFO 127.0.0.1 - - [29/Sep/2024 14:02:20] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:02:29,062 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 82, 'deadline': 7}
+2024-09-29 14:02:29,063 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:02:29,066 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:02:30,676 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 3.3, 'memory_available': 3758338048, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:02:30'}
+2024-09-29 14:02:30,677 INFO 127.0.0.1 - - [29/Sep/2024 14:02:30] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:30,932 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 3.3, 'memory_available': 3758338048, 'total_memory': 8226656256, 'task_queue_length': 1, 'port': 5002, 'timestamp': '2024-09-29 14:02:30'}
+2024-09-29 14:02:30,933 INFO 127.0.0.1 - - [29/Sep/2024 14:02:30] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:31,225 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.6, 'memory_available': 3758141440, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:02:31'}
+2024-09-29 14:02:31,226 INFO 127.0.0.1 - - [29/Sep/2024 14:02:31] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:31,439 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 4.0, 'memory_available': 3758141440, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:02:31'}
+2024-09-29 14:02:31,441 INFO 127.0.0.1 - - [29/Sep/2024 14:02:31] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:37,277 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 223
+2024-09-29 14:02:37,279 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 16.5, 'energy_consumption': 50.324999999999996, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed video_streaming on fog node 3', 'task_id': 'video_streaming_82'}
+2024-09-29 14:02:37,280 INFO 127.0.0.1 - - [29/Sep/2024 14:02:37] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:02:41,170 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 12.3, 'memory_available': 3754979328, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:02:41'}
+2024-09-29 14:02:41,171 INFO 127.0.0.1 - - [29/Sep/2024 14:02:41] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:41,383 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 11.7, 'memory_available': 3754979328, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:02:41'}
+2024-09-29 14:02:41,384 INFO 127.0.0.1 - - [29/Sep/2024 14:02:41] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:43,299 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 52, 'deadline': 30}
+2024-09-29 14:02:43,300 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:02:43,305 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:02:48,514 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 211
+2024-09-29 14:02:48,516 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 10.5, 'energy_consumption': 44.625, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed video_streaming on fog node 3', 'task_id': 'video_streaming_52'}
+2024-09-29 14:02:48,518 INFO 127.0.0.1 - - [29/Sep/2024 14:02:48] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:02:52,707 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 13.8, 'memory_available': 3756118016, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:02:52'}
+2024-09-29 14:02:52,708 INFO 127.0.0.1 - - [29/Sep/2024 14:02:52] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:52,962 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 13.2, 'memory_available': 3756261376, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:02:52'}
+2024-09-29 14:02:52,964 INFO 127.0.0.1 - - [29/Sep/2024 14:02:52] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:53,253 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 9.7, 'memory_available': 3756314624, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:02:53'}
+2024-09-29 14:02:53,255 INFO 127.0.0.1 - - [29/Sep/2024 14:02:53] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:53,472 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 8.5, 'memory_available': 3756056576, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:02:53'}
+2024-09-29 14:02:53,473 INFO 127.0.0.1 - - [29/Sep/2024 14:02:53] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:02:56,541 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 97, 'deadline': 18}
+2024-09-29 14:02:56,542 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:02:56,549 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:03:03,196 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 5.4, 'memory_available': 3755290624, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:03:03'}
+2024-09-29 14:03:03,197 INFO 127.0.0.1 - - [29/Sep/2024 14:03:03] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:03,416 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 5.2, 'memory_available': 3755061248, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:03:03'}
+2024-09-29 14:03:03,417 INFO 127.0.0.1 - - [29/Sep/2024 14:03:03] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:06,264 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 204
+2024-09-29 14:03:06,265 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 19.5, 'energy_consumption': 0.0, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed data_analysis on fog node 1', 'task_id': 'data_analysis_97'}
+2024-09-29 14:03:06,266 INFO 127.0.0.1 - - [29/Sep/2024 14:03:06] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:12,282 INFO Received task for offloading: {'task_type': 'image_processing', 'task_size': 53, 'deadline': 7}
+2024-09-29 14:03:12,282 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:03:12,284 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:03:14,740 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 4.1, 'memory_available': 3752865792, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:03:14'}
+2024-09-29 14:03:14,741 INFO 127.0.0.1 - - [29/Sep/2024 14:03:14] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:14,995 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 4.0, 'memory_available': 3752882176, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:03:14'}
+2024-09-29 14:03:14,995 INFO 127.0.0.1 - - [29/Sep/2024 14:03:14] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:15,288 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.7, 'memory_available': 3752886272, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:03:15'}
+2024-09-29 14:03:15,289 INFO 127.0.0.1 - - [29/Sep/2024 14:03:15] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:15,485 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.9, 'memory_available': 3752886272, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:03:15'}
+2024-09-29 14:03:15,486 INFO 127.0.0.1 - - [29/Sep/2024 14:03:15] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:17,595 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 225
+2024-09-29 14:03:17,597 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 10.7, 'energy_consumption': 31.029999999999998, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed image_processing on fog node 2', 'task_id': 'image_processing_53'}
+2024-09-29 14:03:17,599 INFO 127.0.0.1 - - [29/Sep/2024 14:03:17] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:22,609 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 61, 'deadline': 24}
+2024-09-29 14:03:22,610 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:03:22,638 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:03:22,640 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 201
+2024-09-29 14:03:22,641 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': True, 'delay': 0, 'energy_consumption': 0, 'fog_node_number': 1, 'from_cache': True, 'result': 'Processed video_streaming on fog node 2', 'task_id': 'video_streaming_61'}
+2024-09-29 14:03:22,641 INFO 127.0.0.1 - - [29/Sep/2024 14:03:22] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:23,920 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 66, 'deadline': 18}
+2024-09-29 14:03:23,920 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:03:23,921 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:03:25,230 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 12.5, 'memory_available': 3731132416, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:03:25'}
+2024-09-29 14:03:25,232 INFO 127.0.0.1 - - [29/Sep/2024 14:03:25] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:25,448 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 9.6, 'memory_available': 3731132416, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:03:25'}
+2024-09-29 14:03:25,450 INFO 127.0.0.1 - - [29/Sep/2024 14:03:25] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:27,654 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 26, 'deadline': 13}
+2024-09-29 14:03:27,655 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:03:27,732 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:03:30,344 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 217
+2024-09-29 14:03:30,347 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 5.300000000000001, 'energy_consumption': 0.0, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed data_analysis on fog node 1', 'task_id': 'data_analysis_26'}
+2024-09-29 14:03:30,348 INFO 127.0.0.1 - - [29/Sep/2024 14:03:30] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:30,533 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 220
+2024-09-29 14:03:30,536 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 13.299999999999999, 'energy_consumption': 42.56, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed data_analysis on fog node 1', 'task_id': 'data_analysis_66'}
+2024-09-29 14:03:30,537 INFO 127.0.0.1 - - [29/Sep/2024 14:03:30] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:34,550 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 67, 'deadline': 5}
+2024-09-29 14:03:34,551 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:03:34,556 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:03:36,774 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 10.0, 'memory_available': 3729076224, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:03:36'}
+2024-09-29 14:03:36,776 INFO 127.0.0.1 - - [29/Sep/2024 14:03:36] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:37,024 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 11.0, 'memory_available': 3729133568, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:03:37'}
+2024-09-29 14:03:37,026 INFO 127.0.0.1 - - [29/Sep/2024 14:03:37] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:37,319 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 9.8, 'memory_available': 3729133568, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:03:37'}
+2024-09-29 14:03:37,321 INFO 127.0.0.1 - - [29/Sep/2024 14:03:37] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:37,515 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 8.6, 'memory_available': 3729133568, 'total_memory': 8226656256, 'task_queue_length': 1, 'port': 5000, 'timestamp': '2024-09-29 14:03:37'}
+2024-09-29 14:03:37,516 INFO 127.0.0.1 - - [29/Sep/2024 14:03:37] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:41,269 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 209
+2024-09-29 14:03:41,271 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 13.5, 'energy_consumption': 54.0, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed video_streaming on fog node 1', 'task_id': 'video_streaming_67'}
+2024-09-29 14:03:41,272 INFO 127.0.0.1 - - [29/Sep/2024 14:03:41] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:46,290 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 84, 'deadline': 12}
+2024-09-29 14:03:46,290 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:03:46,295 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:03:46,374 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 36, 'deadline': 29}
+2024-09-29 14:03:46,375 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:03:46,380 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:03:47,264 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 3.7, 'memory_available': 3727966208, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:03:47'}
+2024-09-29 14:03:47,265 INFO 127.0.0.1 - - [29/Sep/2024 14:03:47] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:47,481 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 3.8, 'memory_available': 3727966208, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:03:47'}
+2024-09-29 14:03:47,482 INFO 127.0.0.1 - - [29/Sep/2024 14:03:47] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:49,992 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 219
+2024-09-29 14:03:49,994 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 7.300000000000001, 'energy_consumption': 24.09, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed data_analysis on fog node 1', 'task_id': 'data_analysis_36'}
+2024-09-29 14:03:49,996 INFO 127.0.0.1 - - [29/Sep/2024 14:03:49] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:54,709 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 223
+2024-09-29 14:03:54,711 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 16.9, 'energy_consumption': 34.644999999999996, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed video_streaming on fog node 1', 'task_id': 'video_streaming_84'}
+2024-09-29 14:03:54,713 INFO 127.0.0.1 - - [29/Sep/2024 14:03:54] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:55,010 INFO Received task for offloading: {'task_type': 'image_processing', 'task_size': 53, 'deadline': 25}
+2024-09-29 14:03:55,011 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:03:55,016 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:03:55,022 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 203
+2024-09-29 14:03:55,023 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': True, 'delay': 0, 'energy_consumption': 0, 'fog_node_number': 2, 'from_cache': True, 'result': 'Processed image_processing on fog node 2', 'task_id': 'image_processing_53'}
+2024-09-29 14:03:55,023 INFO 127.0.0.1 - - [29/Sep/2024 14:03:55] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:03:58,807 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 3.7, 'memory_available': 3731718144, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:03:58'}
+2024-09-29 14:03:58,809 INFO 127.0.0.1 - - [29/Sep/2024 14:03:58] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:59,058 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 4.0, 'memory_available': 3732271104, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:03:59'}
+2024-09-29 14:03:59,059 INFO 127.0.0.1 - - [29/Sep/2024 14:03:59] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:59,347 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.8, 'memory_available': 3732271104, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:03:59'}
+2024-09-29 14:03:59,348 INFO 127.0.0.1 - - [29/Sep/2024 14:03:59] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:03:59,544 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 4.1, 'memory_available': 3732041728, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:03:59'}
+2024-09-29 14:03:59,544 INFO 127.0.0.1 - - [29/Sep/2024 14:03:59] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:02,039 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 99, 'deadline': 25}
+2024-09-29 14:04:02,039 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:04:02,041 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:04:02,730 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 65, 'deadline': 18}
+2024-09-29 14:04:02,731 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:04:02,735 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:04:09,248 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 208
+2024-09-29 14:04:09,250 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 13.1, 'energy_consumption': 0.0, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed video_streaming on fog node 2', 'task_id': 'video_streaming_65'}
+2024-09-29 14:04:09,251 INFO 127.0.0.1 - - [29/Sep/2024 14:04:09] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:09,297 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 4.2, 'memory_available': 3731705856, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:04:09'}
+2024-09-29 14:04:09,299 INFO 127.0.0.1 - - [29/Sep/2024 14:04:09] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:09,516 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 4.4, 'memory_available': 3731705856, 'total_memory': 8226656256, 'task_queue_length': 1, 'port': 5001, 'timestamp': '2024-09-29 14:04:09'}
+2024-09-29 14:04:09,517 INFO 127.0.0.1 - - [29/Sep/2024 14:04:09] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:11,954 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 206
+2024-09-29 14:04:11,956 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 19.9, 'energy_consumption': 53.73, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed data_analysis on fog node 2', 'task_id': 'data_analysis_99'}
+2024-09-29 14:04:11,957 INFO 127.0.0.1 - - [29/Sep/2024 14:04:11] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:16,266 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 78, 'deadline': 5}
+2024-09-29 14:04:16,268 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:04:16,271 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:04:16,974 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 50, 'deadline': 30}
+2024-09-29 14:04:16,975 INFO Selected fog node for offloading: http://localhost:5002
+2024-09-29 14:04:16,978 DEBUG Starting new HTTP connection (1): localhost:5002
+2024-09-29 14:04:20,839 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 2.8, 'memory_available': 3731767296, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:04:20'}
+2024-09-29 14:04:20,841 INFO 127.0.0.1 - - [29/Sep/2024 14:04:20] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:21,093 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 2.9, 'memory_available': 3731800064, 'total_memory': 8226656256, 'task_queue_length': 2, 'port': 5002, 'timestamp': '2024-09-29 14:04:21'}
+2024-09-29 14:04:21,094 INFO 127.0.0.1 - - [29/Sep/2024 14:04:21] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:21,380 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.1, 'memory_available': 3732320256, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:04:21'}
+2024-09-29 14:04:21,382 INFO 127.0.0.1 - - [29/Sep/2024 14:04:21] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:21,575 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.3, 'memory_available': 3732320256, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:04:21'}
+2024-09-29 14:04:21,577 INFO 127.0.0.1 - - [29/Sep/2024 14:04:21] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:21,986 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 204
+2024-09-29 14:04:21,988 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 10.1, 'energy_consumption': 0.0, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed data_analysis on fog node 3', 'task_id': 'data_analysis_50'}
+2024-09-29 14:04:21,989 INFO 127.0.0.1 - - [29/Sep/2024 14:04:21] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:24,079 DEBUG http://localhost:5002 "POST /offload_task HTTP/11" 200 206
+2024-09-29 14:04:24,079 INFO Successfully offloaded task to http://localhost:5002: {'cache_hit': False, 'delay': 15.7, 'energy_consumption': 42.39, 'fog_node_number': 3, 'from_cache': False, 'result': 'Processed data_analysis on fog node 3', 'task_id': 'data_analysis_78'}
+2024-09-29 14:04:24,080 INFO 127.0.0.1 - - [29/Sep/2024 14:04:24] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:25,005 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 64, 'deadline': 18}
+2024-09-29 14:04:25,006 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:04:25,011 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:04:25,085 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 96, 'deadline': 13}
+2024-09-29 14:04:25,085 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:04:25,087 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:04:31,329 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 4.9, 'memory_available': 3734728704, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:04:31'}
+2024-09-29 14:04:31,330 INFO 127.0.0.1 - - [29/Sep/2024 14:04:31] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:31,425 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 223
+2024-09-29 14:04:31,427 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 12.9, 'energy_consumption': 26.444999999999997, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed video_streaming on fog node 1', 'task_id': 'video_streaming_64'}
+2024-09-29 14:04:31,429 INFO 127.0.0.1 - - [29/Sep/2024 14:04:31] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:31,548 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 4.7, 'memory_available': 3734732800, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:04:31'}
+2024-09-29 14:04:31,550 INFO 127.0.0.1 - - [29/Sep/2024 14:04:31] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:34,698 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 237
+2024-09-29 14:04:34,699 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 19.299999999999997, 'energy_consumption': 38.599999999999994, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed video_streaming on fog node 1', 'task_id': 'video_streaming_96'}
+2024-09-29 14:04:34,699 INFO 127.0.0.1 - - [29/Sep/2024 14:04:34] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:38,706 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 80, 'deadline': 19}
+2024-09-29 14:04:38,707 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:04:38,708 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:04:38,710 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 201
+2024-09-29 14:04:38,711 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': True, 'delay': 0, 'energy_consumption': 0, 'fog_node_number': 1, 'from_cache': True, 'result': 'Processed video_streaming on fog node 2', 'task_id': 'video_streaming_80'}
+2024-09-29 14:04:38,711 INFO 127.0.0.1 - - [29/Sep/2024 14:04:38] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:41,724 INFO Received task for offloading: {'task_type': 'image_processing', 'task_size': 57, 'deadline': 19}
+2024-09-29 14:04:41,726 INFO Selected fog node for offloading: http://localhost:5000
+2024-09-29 14:04:41,732 DEBUG Starting new HTTP connection (1): localhost:5000
+2024-09-29 14:04:42,872 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 6.6, 'memory_available': 3734745088, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:04:42'}
+2024-09-29 14:04:42,873 INFO 127.0.0.1 - - [29/Sep/2024 14:04:42] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:43,128 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 8.1, 'memory_available': 3734745088, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:04:43'}
+2024-09-29 14:04:43,129 INFO 127.0.0.1 - - [29/Sep/2024 14:04:43] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:43,414 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 8.6, 'memory_available': 3734802432, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:04:43'}
+2024-09-29 14:04:43,415 INFO 127.0.0.1 - - [29/Sep/2024 14:04:43] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:43,609 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 9.6, 'memory_available': 3734802432, 'total_memory': 8226656256, 'task_queue_length': 1, 'port': 5000, 'timestamp': '2024-09-29 14:04:43'}
+2024-09-29 14:04:43,611 INFO 127.0.0.1 - - [29/Sep/2024 14:04:43] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:47,445 DEBUG http://localhost:5000 "POST /offload_task HTTP/11" 200 212
+2024-09-29 14:04:47,447 INFO Successfully offloaded task to http://localhost:5000: {'cache_hit': False, 'delay': 11.5, 'energy_consumption': 44.85, 'fog_node_number': 1, 'from_cache': False, 'result': 'Processed image_processing on fog node 1', 'task_id': 'image_processing_57'}
+2024-09-29 14:04:47,449 INFO 127.0.0.1 - - [29/Sep/2024 14:04:47] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:49,450 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 93, 'deadline': 29}
+2024-09-29 14:04:49,451 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:04:49,455 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:04:49,463 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 197
+2024-09-29 14:04:49,464 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': True, 'delay': 0, 'energy_consumption': 0, 'fog_node_number': 2, 'from_cache': True, 'result': 'Processed data_analysis on fog node 3', 'task_id': 'data_analysis_93'}
+2024-09-29 14:04:49,466 INFO 127.0.0.1 - - [29/Sep/2024 14:04:49] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:04:53,366 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 2.8, 'memory_available': 3734675456, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:04:53'}
+2024-09-29 14:04:53,368 INFO 127.0.0.1 - - [29/Sep/2024 14:04:53] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:53,578 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 4.4, 'memory_available': 3733643264, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 14:04:53'}
+2024-09-29 14:04:53,579 INFO 127.0.0.1 - - [29/Sep/2024 14:04:53] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:04:56,466 INFO Received task for offloading: {'task_type': 'data_analysis', 'task_size': 64, 'deadline': 8}
+2024-09-29 14:04:56,468 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:04:56,472 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:05:00,486 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 94, 'deadline': 15}
+2024-09-29 14:05:00,487 INFO Selected fog node for offloading: http://localhost:5001
+2024-09-29 14:05:00,491 DEBUG Starting new HTTP connection (1): localhost:5001
+2024-09-29 14:05:02,882 DEBUG http://localhost:5001 "POST /offload_task HTTP/11" 200 205
+2024-09-29 14:05:02,884 INFO Successfully offloaded task to http://localhost:5001: {'cache_hit': False, 'delay': 12.9, 'energy_consumption': 38.7, 'fog_node_number': 2, 'from_cache': False, 'result': 'Processed data_analysis on fog node 2', 'task_id': 'data_analysis_64'}
+2024-09-29 14:05:02,886 INFO 127.0.0.1 - - [29/Sep/2024 14:05:02] "POST /offload_task HTTP/1.1" 200 -
+2024-09-29 14:05:04,888 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 3.1, 'memory_available': 3734872064, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:05:04'}
+2024-09-29 14:05:04,913 INFO 127.0.0.1 - - [29/Sep/2024 14:05:04] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:05:05,153 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 3.2, 'memory_available': 3734872064, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 14:05:05'}
+2024-09-29 14:05:05,154 INFO 127.0.0.1 - - [29/Sep/2024 14:05:05] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:05:05,446 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.5, 'memory_available': 3734929408, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:05:05'}
+2024-09-29 14:05:05,447 INFO 127.0.0.1 - - [29/Sep/2024 14:05:05] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 14:05:05,641 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 3.3, 'memory_available': 3734929408, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 14:05:05'}
+2024-09-29 14:05:05,642 INFO 127.0.0.1 - - [29/Sep/2024 14:05:05] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:35:24,983 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.50.26.254:6000
+2024-09-29 15:35:25,002 INFO [33mPress CTRL+C to quit[0m
+2024-09-29 15:35:25,004 INFO  * Restarting with stat
+2024-09-29 15:35:25,199 WARNING  * Debugger is active!
+2024-09-29 15:35:25,200 INFO  * Debugger PIN: 118-721-888
+2024-09-29 15:35:37,377 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 11.4, 'memory_available': 3443056640, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 15:35:37'}
+2024-09-29 15:35:37,378 INFO 127.0.0.1 - - [29/Sep/2024 15:35:37] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:35:42,668 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 32.4, 'memory_available': 3437006848, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 15:35:42'}
+2024-09-29 15:35:42,669 INFO 127.0.0.1 - - [29/Sep/2024 15:35:42] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:39:36,570 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.50.26.254:6000
+2024-09-29 15:39:36,570 INFO [33mPress CTRL+C to quit[0m
+2024-09-29 15:39:36,570 INFO  * Restarting with stat
+2024-09-29 15:39:36,757 WARNING  * Debugger is active!
+2024-09-29 15:39:36,758 INFO  * Debugger PIN: 118-721-888
+2024-09-29 15:39:42,665 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 8.8, 'memory_available': 3473539072, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 15:39:42'}
+2024-09-29 15:39:42,667 INFO 127.0.0.1 - - [29/Sep/2024 15:39:42] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:39:42,905 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 8.4, 'memory_available': 3473022976, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 15:39:42'}
+2024-09-29 15:39:42,906 INFO 127.0.0.1 - - [29/Sep/2024 15:39:42] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:39:46,240 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 9.8, 'memory_available': 3416281088, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 15:39:46'}
+2024-09-29 15:39:46,241 INFO 127.0.0.1 - - [29/Sep/2024 15:39:46] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:39:46,482 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 15.4, 'memory_available': 3415793664, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 15:39:46'}
+2024-09-29 15:39:46,483 INFO 127.0.0.1 - - [29/Sep/2024 15:39:46] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:40:00,242 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 15.6, 'memory_available': 3356753920, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 15:40:00'}
+2024-09-29 15:40:00,242 INFO 127.0.0.1 - - [29/Sep/2024 15:40:00] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:40:00,478 INFO Received status update from Fog Node 3: {'fog_node_number': 3, 'cpu_usage': 25.9, 'memory_available': 3356499968, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5002, 'timestamp': '2024-09-29 15:40:00'}
+2024-09-29 15:40:00,479 INFO 127.0.0.1 - - [29/Sep/2024 15:40:00] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:40:04,695 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 6.0, 'memory_available': 3349127168, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 15:40:04'}
+2024-09-29 15:40:04,696 INFO 127.0.0.1 - - [29/Sep/2024 15:40:04] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:40:04,939 INFO Received status update from Fog Node 1: {'fog_node_number': 1, 'cpu_usage': 5.5, 'memory_available': 3349131264, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5000, 'timestamp': '2024-09-29 15:40:04'}
+2024-09-29 15:40:04,940 INFO 127.0.0.1 - - [29/Sep/2024 15:40:04] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:40:07,336 INFO Received task for offloading: {'task_type': 'image_processing', 'task_size': 74, 'deadline': 21}
+2024-09-29 15:40:07,336 WARNING No available fog nodes to offload task.
+2024-09-29 15:40:07,353 INFO 127.0.0.1 - - [29/Sep/2024 15:40:07] "[35m[1mPOST /offload_task HTTP/1.1[0m" 500 -
+2024-09-29 15:40:08,274 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 11.7, 'memory_available': 3329708032, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 15:40:08'}
+2024-09-29 15:40:08,275 INFO 127.0.0.1 - - [29/Sep/2024 15:40:08] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:40:08,518 INFO Received status update from Fog Node 2: {'fog_node_number': 2, 'cpu_usage': 11.1, 'memory_available': 3329708032, 'total_memory': 8226656256, 'task_queue_length': 0, 'port': 5001, 'timestamp': '2024-09-29 15:40:08'}
+2024-09-29 15:40:08,519 INFO 127.0.0.1 - - [29/Sep/2024 15:40:08] "POST /status_update HTTP/1.1" 200 -
+2024-09-29 15:40:14,367 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 72, 'deadline': 28}
+2024-09-29 15:40:14,367 WARNING No available fog nodes to offload task.
+2024-09-29 15:40:14,369 INFO 127.0.0.1 - - [29/Sep/2024 15:40:14] "[35m[1mPOST /offload_task HTTP/1.1[0m" 500 -
+2024-09-29 15:40:17,378 INFO Received task for offloading: {'task_type': 'video_streaming', 'task_size': 26, 'deadline': 7}
+2024-09-29 15:40:17,378 WARNING No available fog nodes to offload task.
+2024-09-29 15:40:17,379 INFO 127.0.0.1 - - [29/Sep/2024 15:40:17] "[35m[1mPOST /offload_task HTTP/1.1[0m" 500 -
