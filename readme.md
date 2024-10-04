@@ -145,5 +145,20 @@ Below is a terminal view showing the task processing across all containers.
 ![Terminal View of Task Offloading](./mnt/data/Screenshot from 2024-10-04 22-18-47.png)
 
 
+![1000034988](https://github.com/user-attachments/assets/4654aeb5-4bf3-4799-b9fd-f474b73ba5d6)
+![1000034987](https://github.com/user-attachments/assets/3d8e98e5-dde5-4472-92e7-3a2408d40ddb)
+![1000034990](https://github.com/user-attachments/assets/3d706bd1-f3dd-4852-bb38-e093b2511c11)
+![1000034993](https://github.com/user-attachments/assets/db804653-2f10-4c8a-9040-02b7d27019e7)
+![1000035015](https://github.com/user-attachments/assets/b066e2ed-895c-441d-9299-96d84851cee0)
+![1000035014](https://github.com/user-attachments/assets/084c7bb4-e6bb-45f4-8926-b2ce66b8b1c1)
+![1000035016](https://github.com/user-attachments/assets/7dc31b12-8ac6-44c4-97f2-35fc14238ee0)
+![1000035013](https://github.com/user-attachments/assets/93ea0d6b-f1b3-486b-94dd-225f7b3dbf1f)
+![1000035011](https://github.com/user-attachments/assets/8a59ba9e-fba9-4551-a7cb-16855884e20b)
+![1000035012](https://github.com/user-attachments/assets/c40d53cb-ef7e-4730-9f67-d13605cc67a0)
+![1000035010](https://github.com/user-attachments/assets/9ab1aa67-c95b-4167-896a-4981def02658)
+![1000035009](https://github.com/user-attachments/assets/dc471131-08e4-4a56-b654-13a930bfafd9)
+![1000035008](https://github.com/user-attachments/assets/51aea0aa-258a-455d-91c5-338b5972e6fc)
+![1000035007](https://github.com/user-attachments/assets/80a215d2-3293-44af-af8e-b3e503eef0ea)
+![1000035006](https://github.com/user-attachments/assets/2476ebc2-9ccb-42e5-bc0e-e81f89d935c3)
 
 
