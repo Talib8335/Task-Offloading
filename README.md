@@ -1,25 +1,29 @@
-task_offloading_project/
+```plaintext
+
+Task_offloading/
 │
 ├── iot_device/
-│   ├── device.py  # IoT device sends tasks to the manager
+│   ├── device.py  
 │   ├── Dockerfile
-│   ├── requirements.txt  # Dependencies for IoT device
+│   ├── requirements.txt  
 │
 ├── fog_nodes/
-│   ├── fog_node1.py  # Fog node 1
-│   ├── fog_node2.py  # Fog node 2
-│   ├── fog_node3.py  # Fog node 3
+│   ├── fog_node1.py  
+│   ├── fog_node2.py  
+│   ├── fog_node3.py  
 │   ├── Dockerfile
-│   ├── requirements.txt  # Dependencies for fog nodes
+│   ├── requirements.txt  
 │
 ├── manager/
 │   ├── manager.py  # Centralized manager for task distribution
 │   ├── Dockerfile
-│   ├── requirements.txt  # Dependencies for the manager
+│   ├── requirements.txt  
 │
 ├── redis/  # Redis cache setup
 │   ├── Dockerfile
-│   ├── requirements.txt  # Dependencies for Redis setup (if needed)
+│   ├── requirements.txt  
 │
 ├── docker-compose.yml  # For orchestration
-├── README.md  # Project documentation
+├── README.md 
+
+```
