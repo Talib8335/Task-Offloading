@@ -8,7 +8,7 @@ This repository contains the implementation of a task offloading system designed
 2. **Manager**: The manager receives tasks from IoT devices and evaluates the status of all fog nodes (checking CPU usage, memory usage, task queue length, etc.). Based on the **Weighted Formula Method**, it selects the most suitable fog node for task offloading.
 3. **Fog Nodes**: Fog nodes process tasks based on their resource availability. If selected, the node handles the task processing; otherwise, it communicates with the manager for further decision-making. Redis caching is utilized to store frequently requested tasks.
 4. **Cloud Node**: If none of the fog nodes are available, tasks are forwarded to the cloud node for processing.
-5. **Redis Cache**: Frequently accessed tasks are cached using Redis, reducing the processing time and server load for repeated tasks.
+5. **Redis Cache**: Frequently accessed tasks are cached using Redis in the in-memory RAM, reducing the processing time and server load for repeated tasks.
 
 ## Task Offloading Details
 1. **Task Generation**: IoT devices generate tasks with varying characteristics, such as size and priority. The task generation follows a **Poisson 
@@ -113,7 +113,7 @@ Task_offloading/
 
 6. **Stop the Services:**
    ```bash
-   docker-compose down
+   docker compose down
    ```
 
 ### Snapshots:
@@ -121,44 +121,49 @@ Below are snapshots showing the performance metrics of the system:
 
 ### Snapshots for Individual Containers
 
+- **Container List:**
+  ![Container Overview](https://github.com/user-attachments/assets/b7eb6aa3-a954-48f0-a682-18a4d6c9dfa4)
+
 - **Fog Node 1**:
-  ![Fog Node 1 CPU & Memory Usage](./mnt/data/fog1.png)
+  ![Fog Node 1 CPU & Memory Usage](https://github.com/user-attachments/assets/f0cb5a0f-6f31-49a1-a525-1f64a3aca988)
+
+- **Fog Node 2**:
+  ![Fog Node 1 CPU & Memory Usage](https://github.com/user-attachments/assets/712c9129-0f07-457d-a8ad-0a3dcb8f9e7d)
+
+- **Fog Node 3**:
+  ![Fog Node 1 CPU & Memory Usage](https://github.com/user-attachments/assets/eb9a18f3-4621-49e5-bcf4-6f810bde6903)
 
 - **Manager**:
-  ![Manager CPU & Memory Usage](./mnt/data/manager.png)
+  ![Manager CPU & Memory Usage](https://github.com/user-attachments/assets/0ba8b131-87b5-4cb4-99a9-47b55a357467)
+
+- **Redis**:
+  ![Redis CPU & Memory Usage](https://github.com/user-attachments/assets/412487b7-f5e6-408f-aa95-55311a25348c)
 
 ### Combined Performance Results:
 These snapshots represent the combined performance metrics across all containers.
 
 - **Overall CPU Usage:**
-  ![Combined CPU Usage](./mnt/data/Screenshot from 2024-10-04 22-32-22.png)
+  ![Combined CPU Usage](https://github.com/user-attachments/assets/3c5b7d0e-1087-4d0b-bba2-769ab0525003)
 
 - **Memory, I/O, and Network Usage:**
-  ![Combined Memory & I/O](./mnt/data/Screenshot from 2024-10-04 22-30-32.png)
-
-- **Container List:**
-  ![Container Overview](./mnt/data/Screenshot from 2024-10-04 22-20-45.png)
+  ![Combined Memory & I/O](https://github.com/user-attachments/assets/9fb52d36-af54-479c-9e3d-972e804ddde6)
 
 ### Terminal Output
 Below is a terminal view showing the task processing across all containers.
 
-![Terminal View of Task Offloading](./mnt/data/Screenshot from 2024-10-04 22-18-47.png)
+![Terminal View of Task Offloading 1](https://github.com/user-attachments/assets/02d7905c-42e8-484f-8fe8-9a3ed8986d56)
+![Terminal View of Task Offloading 2](https://github.com/user-attachments/assets/c0c678ce-568a-40f8-a6e8-9be4283ddd77)
+![redis-cli](https://github.com/user-attachments/assets/7ad53b37-f790-4bac-bfab-196d3275546b)
+
+## Future Improvements
+
+### Homogeneous System
+In the current implementation, we have used a **homogeneous system**, where all fog nodes have identical resource configurations (CPU, memory, etc.). This setup provided a controlled environment to test our task offloading algorithms and caching mechanisms.
+
+### Transition to Heterogeneous System
+In future updates, we plan to move towards a **heterogeneous system** where fog nodes will have different configurations (e.g., varying CPU cores, memory, and network speeds). This will allow for more dynamic and intelligent task offloading decisions, better reflecting real-world IoT-Fog-Cloud environments. We will also aim to handle more **CPU and memory-intensive processing** as part of the system’s evolution.
 
 
-![1000034988](https://github.com/user-attachments/assets/4654aeb5-4bf3-4799-b9fd-f474b73ba5d6)
-![1000034987](https://github.com/user-attachments/assets/3d8e98e5-dde5-4472-92e7-3a2408d40ddb)
-![1000034990](https://github.com/user-attachments/assets/3d706bd1-f3dd-4852-bb38-e093b2511c11)
-![1000034993](https://github.com/user-attachments/assets/db804653-2f10-4c8a-9040-02b7d27019e7)
-![1000035015](https://github.com/user-attachments/assets/b066e2ed-895c-441d-9299-96d84851cee0)
-![1000035014](https://github.com/user-attachments/assets/084c7bb4-e6bb-45f4-8926-b2ce66b8b1c1)
-![1000035016](https://github.com/user-attachments/assets/7dc31b12-8ac6-44c4-97f2-35fc14238ee0)
-![1000035013](https://github.com/user-attachments/assets/93ea0d6b-f1b3-486b-94dd-225f7b3dbf1f)
-![1000035011](https://github.com/user-attachments/assets/8a59ba9e-fba9-4551-a7cb-16855884e20b)
-![1000035012](https://github.com/user-attachments/assets/c40d53cb-ef7e-4730-9f67-d13605cc67a0)
-![1000035010](https://github.com/user-attachments/assets/9ab1aa67-c95b-4167-896a-4981def02658)
-![1000035009](https://github.com/user-attachments/assets/dc471131-08e4-4a56-b654-13a930bfafd9)
-![1000035008](https://github.com/user-attachments/assets/51aea0aa-258a-455d-91c5-338b5972e6fc)
-![1000035007](https://github.com/user-attachments/assets/80a215d2-3293-44af-af8e-b3e503eef0ea)
-![1000035006](https://github.com/user-attachments/assets/2476ebc2-9ccb-42e5-bc0e-e81f89d935c3)
+
 
 
